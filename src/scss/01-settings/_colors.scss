@@ -1,0 +1,26 @@
+/**
+ * COLORS
+ * settings/colors.scss
+ */
+
+$c-primary:                     #2da2bb;
+$c-secondary:                   #fbe983;
+$c-brand:                       #020633;
+
+$c-background--light:           #fff;
+$c-background:                  #eee;
+$c-background--med:             #eee;
+$c-background--dark:            #999;
+$c-background--brand:           $c-brand;
+
+$c-text:                        #333333;
+$c-text--light:                 #fff;
+$c-text--medium:                #eee;
+$c-text--brand:                 $c-brand;
+$c-text--disabled:              #ddd;
+$c-text--error:                 #f00;
+
+$c-action:                      #116188;
+$c-disabled:                    #eee;
+$c-positive:                    #80c18d;
+$c-negative:                    #fcc;
