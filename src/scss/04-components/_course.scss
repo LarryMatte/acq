@@ -1,0 +1,71 @@
+/* COURSE
+- components/course.scss */
+
+.courses {
+    & > .course {
+        margin-bottom: 1em;
+    }
+
+    &__title {
+        color: $c-brand;
+    }
+}
+
+.course {
+    background-color: $c-background--light;
+
+    padding: 2rem 1.5rem .5em;
+    display: flex;
+
+    &__icon {
+        display: inline-block;
+        width: 75px;
+        height: 75px;
+        vertical-align: top;
+    }
+
+    &__content {
+        display: inline-block;
+        margin-left: 22px;
+
+        vertical-align: top;
+    }
+
+    &__top {
+        margin-bottom: 1em;
+    }
+
+    &__categorie {
+        color: $c-secondary;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+
+        display: inline-block;
+        margin-right: 1em;
+    }
+
+    &__location {
+        color: $c-text--med;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-family: $f-regular;
+
+        margin-bottom: .5em;
+    }
+
+    &__details {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+
+        padding: 1em 0 .75em;
+        border-top: 1px solid $c-neutral--light;
+    }
+
+    &__date {
+        color: $c-text--brand;
+    }
+}

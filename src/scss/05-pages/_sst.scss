@@ -1,0 +1,23 @@
+/* SST
+- pages/sst.scss */
+
+.p-sst {
+    &__prevention {
+        position: relative;
+
+        &::after {
+            content: "";
+
+            background: url("../img/sst/bg-prevention.png") no-repeat;
+            background-size: cover;
+
+            display: block;
+            height: 100%;
+
+            position: absolute;
+            right: 50%;
+            top: 0;
+            left: 0;
+        }
+    }
+}

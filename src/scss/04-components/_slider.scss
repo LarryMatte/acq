@@ -1,0 +1,24 @@
+/* SLIDER
+- components/slider.scss */
+
+.slider {
+    text-align: center;
+
+    &__img {
+        width: 190px;
+        height: 190px;
+    }
+
+    &__title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-family: $f-bold;
+
+        margin: 2em 0 .6em;
+    }
+
+    hr.separator {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

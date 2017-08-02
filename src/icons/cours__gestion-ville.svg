@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch -->
+    <title> ICON</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="37.5" cy="37.5" r="37.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5A---calendrier-1---1" transform="translate(-440.000000, -1404.000000)">
+            <g id="Formation-1-Copy-4" transform="translate(425.000000, 1387.000000)">
+                <g id="-ICON" transform="translate(15.000000, 17.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <g id="Icon---gestion-entreprise---ville" mask="url(#mask-2)">
+                        <g transform="translate(18.000000, 23.000000)" id="Page-1">
+                            <g>
+                                <polygon id="Fill-1" fill="#0E7CC8" points="28.3277676 0.00224212068 28.2971035 2.02295339 25.0690108 2.0565852 25.0690108 5.33848935 23.1455359 5.33848935 23.1455359 13.9958778 13.2047946 13.9958778 13.2047946 18.3539999 8.37938147 18.3539999 8.46579846 26.9945725 -0.000278764479 26.9945725 -0.000278764479 44.634457 11.8695127 53.9869029 37.9256286 51.1113831 37.9256286 5.33848935 35.999366 5.33848935 35.999366 2.0565852 33.543451 2.0565852 33.543451 0.00224212068"></polygon>
+                                <polygon id="Fill-2" fill="#FFFFFF" points="10.8801776 23.8382271 15.7362548 23.8382271 15.7362548 19.8920947 10.8801776 19.8920947"></polygon>
+                                <polygon id="Fill-3" fill="#FFFFFF" points="25.010749 10.9180067 36.3397375 10.9180067 36.3397375 7.60807601 25.010749 7.60807601"></polygon>
+                                <polygon id="Fill-4" fill="#FFFFFF" points="32.7464633 22.2210976 35.9829189 22.2210976 35.9829189 18.9111669 32.7464633 18.9111669"></polygon>
+                                <polygon id="Fill-5" fill="#FFFFFF" points="32.7464633 32.4731944 35.9829189 32.4731944 35.9829189 29.1604611 32.7464633 29.1604611"></polygon>
+                                <polygon id="Fill-6" fill="#FFFFFF" points="32.7464633 42.8177787 35.9829189 42.8177787 35.9829189 39.507848 32.7464633 39.507848"></polygon>
+                                <polygon id="Fill-7" fill="#FFFFFF" points="18.4458456 23.8382271 23.3019228 23.8382271 23.3019228 19.8920947 18.4458456 19.8920947"></polygon>
+                                <polygon id="Fill-8" fill="#FFFFFF" points="10.8801776 30.8000118 15.7362548 30.8000118 15.7362548 26.8538794 10.8801776 26.8538794"></polygon>
+                                <polygon id="Fill-9" fill="#FFFFFF" points="18.4458456 30.8000118 23.3019228 30.8000118 23.3019228 26.8538794 18.4458456 26.8538794"></polygon>
+                                <polygon id="Fill-10" fill="#FFFFFF" points="18.4458456 37.6384799 23.3019228 37.6384799 23.3019228 33.6923475 18.4458456 33.6923475"></polygon>
+                                <polygon id="Fill-11" fill="#FFFFFF" points="18.4458456 44.6310938 23.3019228 44.6310938 23.3019228 40.6849614 18.4458456 40.6849614"></polygon>
+                                <polygon id="Fill-12" fill="#FFFFFF" points="18.4458456 52.2290803 23.3019228 52.2290803 23.3019228 48.2829479 18.4458456 48.2829479"></polygon>
+                                <polygon id="Fill-13" fill="#FFFFFF" points="3.80513514 34.1575876 8.66121236 34.1575876 8.66121236 30.2114552 3.80513514 30.2114552"></polygon>
+                                <polygon id="Fill-14" fill="#FFFFFF" points="3.80513514 43.9248258 8.66121236 43.9248258 8.66121236 39.9786934 3.80513514 39.9786934"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <circle id="Oval-3-Copy-3" stroke="#DCDCDC" stroke-width="3" mask="url(#mask-2)" cx="37.5" cy="37.5" r="36"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

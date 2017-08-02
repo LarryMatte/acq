@@ -1,0 +1,34 @@
+/* PAGINATION
+- components/pagination.scss */
+
+.pagination {
+    &__list {
+        text-align: center;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        background-color: #b8b8b8;
+
+        display: inline-block;
+        width: 90px;
+        height: 50px;
+        margin: 0 5px;
+        border-radius: 2px;
+
+        &--active {
+            background-color: $c-brand;
+        }
+    }
+
+    &__link {
+        color: $c-text--light;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+
+        display: block;
+    }
+}

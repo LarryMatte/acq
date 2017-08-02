@@ -1,0 +1,56 @@
+/* ARTICLE
+- pages/article.scss */
+
+.p-article {
+    &__infos {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__date {
+        display: inline-block;
+        margin-right: 1em;
+    }
+
+    &__categorie {
+        color: $c-text--med;
+    }
+
+    &-banner {
+        margin: 1em 0 3.75em;
+
+        &__credit {
+            font-size: 1.2rem;
+        }
+    }
+
+    &__lead {
+        font-family: $f-medium;
+        font-size: 1.8rem;
+
+        margin-bottom: 1.5em;
+    }
+
+    &-contact {
+        &__separator {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        &__list {
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+        }
+
+        &__item {
+            font-size: 1.4rem;
+            margin: 0;
+        }
+    }
+}

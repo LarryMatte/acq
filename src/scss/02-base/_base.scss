@@ -1,0 +1,75 @@
+/* BASE
+- base/base.scss */
+
+* {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $c-background;
+    font: 1rem $f-regular, sans-serif;
+    line-height: 1.25;
+    color: $c-text;
+    transition: all .5s ease-in;
+}
+
+html,
+body {
+    height: 100vh;
+    min-height: 100vh;
+}
+
+label {
+    font-size: 1.2rem;
+    letter-spacing: .13em;
+}
+
+textarea,
+input,
+select {
+    color: $c-text;
+    background-color: $c-neutral--light;
+    font-size: 1.4rem;
+
+    display: inline-block;
+    border: 0;
+
+    outline: none;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    background: transparent;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 18px;
+    border: 1px solid $c-neutral--light;
+    border-radius: 3px;
+
+    vertical-align: middle;
+
+    -webkit-appearance: none;
+}
+
+table {
+    th {
+        font-weight: normal;
+        text-align: left;
+    }
+
+    td,
+    th {
+        padding: 0;
+    }
+}
+
+img {
+    width: 100%;
+}

@@ -1,0 +1,46 @@
+/* MEMBER
+- pages/member.scss */
+
+.p-member {
+    &__offers {
+        margin-bottom: .2em;
+        display: flex;
+
+        position: relative;
+
+        &__services,
+        &__annual-saving {
+            min-height: 50px;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+
+            & > p {
+                margin-bottom: 0;
+            }
+        }
+
+        &__services {
+            background-color: $c-background;
+        }
+
+        &__annual-saving {
+            background-color: $c-brand;
+            color: $c-text--light;
+        }
+    }
+
+    &__association {
+        .panel {
+            min-width: 33%;
+            width: 33%;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__brochure {
+        color: $c-text--light;
+        background: url("../img/member/bg-brochure.png") no-repeat;
+        background-size: cover;
+    }
+}

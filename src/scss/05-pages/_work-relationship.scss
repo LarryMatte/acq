@@ -1,0 +1,77 @@
+/* SST
+- pages/sst.scss */
+
+.p-work-relationship {
+    .offers {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (min-width: $screen-md-min) {
+            margin: 0 -30px;
+        }
+
+        & > .offer {
+            padding: 0;
+            margin-bottom: 7em;
+
+            @media (min-width: $screen-md-min) {
+                min-width: 45%;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+        flex-wrap: wrap;
+
+        &__content {
+            margin-bottom: 3em;
+        }
+
+        &__img {
+            margin-bottom: 3em;
+        }
+
+        &__btn {
+            margin-top: auto;
+            align-self: center;
+
+            @media (min-width: $screen-md-min) {
+                align-self: flex-start;
+            }
+        }
+    }
+
+    &-sector {
+        position: relative;
+
+        &::after {
+            content: "";
+
+            background: url("../img/work-relationship/bg-sector.png") no-repeat;
+            background-size: cover;
+
+            display: block;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            @media (min-width: $screen-md-min) {
+                right: 50%;
+            }
+        }
+
+        &__main-text {
+            font-size: 4rem;
+
+            padding-top: 1.35em;
+        }
+    }
+}

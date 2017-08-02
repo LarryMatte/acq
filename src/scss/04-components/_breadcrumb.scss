@@ -1,0 +1,31 @@
+/* BREADCRUMB
+- components/breadcrumb.scss */
+
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+
+    &__item {
+        color: $c-text--light;
+        font-size: 1.2rem;
+
+        display: inline-block;
+
+        &:not(:last-child)::after {
+            content: url("data:image/svg+xml;utf8,<svg width='10' height='10' viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'><title>Arrow</title><path fill='#FFF' d='M13 .333l-2.232 2.233 8.835 8.85H.333v3.167h19.27l-8.85 8.835L13 25.668 25.667 13'/></svg>");
+
+            display: inline-block;
+            height: auto;
+            width: 10px;
+            vertical-align: middle;
+        }
+    }
+
+    &__link {
+        color: $c-text--light;
+    }
+}

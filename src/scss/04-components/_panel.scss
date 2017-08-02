@@ -1,0 +1,123 @@
+/* PANEL
+- components/panel.scss */
+
+.panels {
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    & > .panel {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+        margin-bottom: 4em;
+
+        @media (min-width: $screen-md-min) {
+            margin-bottom: 0;
+        }
+    }
+
+    &--half {
+        & > .panel {
+            min-width: 45%;
+        }
+    }
+}
+
+.panel {
+    background-color: $c-background--light;
+    color: $c-text;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-wrap: wrap;
+
+    &--neutral {
+        background-color: $c-background;
+    }
+
+    &--bordered {
+        margin-top: -10px;
+        border-top: 10px solid $c-brand;
+    }
+
+    &--double {
+        flex-grow: 2;
+    }
+
+    &__content {
+        padding: 3em $s-padding;
+        flex: 1;
+
+        &--center {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__bottom {
+        margin-top: 0;
+        padding: 0 $s-padding 3em;
+    }
+
+    &__label {
+        color: $c-text--brand;
+        font-size: 2em;
+        text-transform: uppercase;
+
+        display: block;
+        margin-bottom: .7em;
+    }
+
+    &__title {
+        font-size: 2.5em;
+        font-family: $f-regular;
+        letter-spacing: 0;
+
+        margin-bottom: .7em;
+    }
+
+    &__detail {
+        text-transform: uppercase;
+        font-family: $f-medium;
+        font-size: 1.6rem;
+    }
+
+    &__tags {
+        color: $c-text--med;
+
+        padding: 0;
+        margin: 1.5em 0 0;
+
+        list-style: none;
+    }
+
+    &__tag {
+        text-transform: uppercase;
+
+        display: inline-block;
+        margin: 0;
+
+        &:not(:last-child)::after {
+            content: "";
+
+            background-color: $c-text--med;
+
+            display: inline-block;
+            width: 2px;
+            height: .9em;
+            margin: 0 .5em;
+        }
+    }
+
+    &__separator {
+        @include separator;
+    }
+
+    &__btn {
+        margin: -27px 0;
+        align-self: center;
+    }
+}

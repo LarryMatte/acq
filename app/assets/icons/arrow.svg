@@ -1,0 +1,7 @@
+<svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+    <title>Arrow</title>
+    <g fill="none" fill-rule="evenodd">
+        <path d="M32 32H-6V-6h38"/>
+        <path fill="#FFF" d="M.333 13l2.233 2.232 8.85-8.835v19.27h3.167V6.397l8.835 8.85L25.668 13 13 .333"/>
+    </g>
+</svg>

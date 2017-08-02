@@ -1,0 +1,101 @@
+/* HOME
+- pages/home.scss */
+
+.p-home {
+    padding: 5em 0;
+
+    &__banner {
+        background: url("../img/home/home-banner.png") no-repeat;
+        background-size: cover;
+
+        padding: 12.5em;
+
+        &__text {
+            color: $c-text--light;
+            font-size: 9rem;
+            font-family: $f-bold;
+            text-transform: uppercase;
+            letter-spacing: .022em;
+            line-height: 1.08em;
+        }
+    }
+
+    &__main-news {
+        background-color: $c-background;
+        font-family: $f-medium;
+        text-transform: uppercase;
+
+        width: 575px;
+        max-width: 50%;
+        padding: 0;
+        border-top: 10px solid $c-brand;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        position: absolute;
+        top: -90px;
+        right: 0;
+        bottom: 0;
+
+        &__info {
+            padding: 5.5rem 6rem;
+        }
+
+        &__label {
+            font-family: $f-medium;
+            font-size: 1.6rem;
+        }
+
+        &__date {
+            color: $c-brand;
+            font-size: 3.5rem;
+        }
+
+        &__title {
+            font-size: 4rem;
+
+            margin-bottom: .5em;
+        }
+
+        &__detail {
+            font-size: 1.6rem;
+            line-height: 1em;
+
+            display: block;
+            margin: 0;
+        }
+    }
+}
+
+.industry-portrait {
+    background: url("../img/home/bg-industry-portrait.png") no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    &__title {
+        color: $c-text--light;
+        font-size: 6rem;
+        font-family: $f-bold;
+        text-transform: uppercase;
+    }
+}
+
+.documentation-center {
+    position: relative;
+
+    &::after {
+        content: "";
+
+        background: url("../img/home/bg-documentation-center.png") no-repeat;
+        background-size: cover;
+
+        display: block;
+        height: 100%;
+
+        position: absolute;
+        left: 50%;
+        top: 0;
+        right: 0;
+    }
+}

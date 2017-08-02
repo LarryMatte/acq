@@ -1,0 +1,58 @@
+/* TRAINING
+- pages/training.scss */
+
+.p-training {
+    &__banner {
+        background: url("../img/training/bg-law.png") no-repeat;
+        background-size: cover;
+        color: $c-text--light;
+    }
+
+    &__law {
+        background: url("../img/training/bg-law.png") no-repeat;
+        background-size: cover;
+        color: $c-text--light;
+    }
+
+    &__questions {
+        background: url("../img/training/bg-questions.png") no-repeat;
+        background-size: cover;
+        color: $c-text--light;
+    }
+
+    &__highlights {
+        &__year {
+            font-size: 4rem;
+            font-family: $f-medium;
+
+            display: inline-block;
+            vertical-align: middle;
+            width: 150px;
+            //border-right:1px solid $c-neutral--light;
+
+            position: relative;
+
+            &::after,
+            &::before {
+                content: "";
+
+                background-color: $c-neutral--light;
+
+                height: 15px;
+                width: 15px;
+
+                border-radius: 50%;
+
+                position: absolute;
+                right: -8px;
+                top: calc(50% - 7px);
+            }
+        }
+
+        &__text {
+            //display: inline-block;
+            //margin-left: 150px;
+            vertical-align: middle;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+/* HEADER
+- layout/header.scss */
+
+.header {
+    display: none;
+
+    @media (min-width: $screen-md-min) {
+        display: block;
+    }
+
+    &-top {
+        background-color: $c-neutral--light;
+    }
+
+    &__region {
+        font-size: 1.3rem;
+        font-family: $f-medium;
+        line-height: 50px;
+
+        float: left;
+    }
+
+    &-bottom {
+        background-color: $c-background;
+
+        height: 90px;
+    }
+
+    &__logo {
+        width: 165px;
+        padding-top: .6em;
+        margin: 0;
+
+        float: left;
+    }
+
+    &-banner {
+        background: url("../img/home/home-banner.png") no-repeat;
+        background-size: cover;
+
+        padding: 9.3em 0;
+
+        &__title {
+            color: $c-text--light;
+            font-size: 3.85rem;
+            font-family: $f-bold;
+            text-transform: uppercase;
+            letter-spacing: .022em;
+            line-height: 1.08em;
+        }
+
+        &__text {
+            color: $c-text--light;
+            font-size: 2em;
+        }
+    }
+
+    &-responsive {
+        background-color: $c-background--light;
+
+        @media (min-width: $screen-md-min) {
+            display: none;
+        }
+
+        .header__logo {
+            display: inline-block;
+
+            float: none;
+        }
+
+        .header__region {
+            background-color: $c-background;
+
+            padding: 1em 2em;
+            border-bottom: 1px solid $c-background--light;
+
+            float: none;
+
+            &__icon {
+                margin-top: 1.25em;
+
+                float: right;
+            }
+        }
+    }
+}

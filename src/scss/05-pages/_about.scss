@@ -1,0 +1,59 @@
+/* ABOUT
+- pages/about.scss */
+
+.p-about {
+    &__goal {
+        background: url("../img/about/bg-goal.png") no-repeat;
+        background-size: cover;
+        color: $c-text--light;
+        text-align: center;
+    }
+
+    &__mission {
+        -moz-column-count: 2; /* Firefox */
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        column-count: 2;
+    }
+
+    &__member {
+        background: url("../img/about/bg-member.png") no-repeat;
+        background-size: cover;
+        color: $c-text--light;
+    }
+
+    &__highlights {
+        &__year {
+            font-size: 4rem;
+            font-family: $f-medium;
+
+            display: inline-block;
+            vertical-align: middle;
+            width: 150px;
+            //border-right:1px solid $c-neutral--light;
+
+            position: relative;
+
+            &::after,
+            &::before {
+                content: "";
+
+                background-color: $c-neutral--light;
+
+                height: 15px;
+                width: 15px;
+
+                border-radius: 50%;
+
+                position: absolute;
+                right: -8px;
+                top: calc(50% - 7px);
+            }
+        }
+
+        &__text {
+            //display: inline-block;
+            //margin-left: 150px;
+            vertical-align: middle;
+        }
+    }
+}

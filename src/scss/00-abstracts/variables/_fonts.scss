@@ -1,0 +1,33 @@
+/* FONTS
+- abstract/variables/fonts.scss */
+
+@font-face {
+    font-family: "dinbold";
+    font-weight: normal;
+    font-style: normal;
+    src:
+        url("../font/din-bold.woff2") format("woff2"),
+        url("../font/din-bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "dinmedium";
+    font-weight: normal;
+    font-style: normal;
+    src:
+        url("../font/din-medium.woff2") format("woff2"),
+        url("../font/din-medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "dinregular";
+    font-weight: normal;
+    font-style: normal;
+    src:
+        url("../font/din-regular.woff2") format("woff2"),
+        url("../font/din-regular.woff") format("woff");
+}
+
+$f-bold: "dinbold";
+$f-medium: "dinmedium";
+$f-regular: "dinregular";

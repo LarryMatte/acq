@@ -1,0 +1,41 @@
+/* MAIN
+- layout/main.scss */
+
+.lead {
+    font-size: 2rem;
+    line-height: 1.45;
+}
+
+.separator {
+    @include separator;
+    border: 0;
+
+    &--light {
+        background-color: $c-background--light;
+    }
+}
+
+a[href$="pdf"] {
+    color: $c-text;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 75px;
+    min-height: 45px;
+
+    position: relative;
+
+    &::before {
+        content: "";
+
+        background: url("data:image/svg+xml;utf8,<svg width='45' height='45' viewBox='0 0 49 49' xmlns='http://www.w3.org/2000/svg'><title>download</title><path d='M24.5 0C18.002 0 11.77 2.582 7.176 7.176 2.582 11.77 0 18.002 0 24.5c0 6.498 2.582 12.73 7.176 17.324C11.77 46.418 18.002 49 24.5 49c6.498 0 12.73-2.582 17.324-7.176C46.418 37.23 49 30.998 49 24.5c0-6.498-2.582-12.73-7.176-17.324C37.23 2.582 30.998 0 24.5 0zm-2.733 8.177h5.466V21.68h4.936l-7.67 8.626-7.67-8.625h4.937V8.178zm-9.038 25.51H36.27v5.17H12.73v-5.17z' fill='#494949' fill-rule='evenodd'/></svg>");
+        background-size: 49px 49px;
+
+        display: inline-block;
+        height: 49px;
+        width: 49px;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

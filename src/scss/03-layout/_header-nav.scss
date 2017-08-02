@@ -1,0 +1,384 @@
+/* MAIN-NAV
+- layout/main-nav.scss */
+
+.meta-nav {
+    position: absolute;
+    right: 0;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        font-size: 1.3rem;
+
+        display: block;
+        margin: 0;
+
+        float: left;
+    }
+
+    &__link {
+        color: $c-text;
+        font-family: $f-medium;
+        text-decoration: none;
+        line-height: 50px;
+        letter-spacing: .01em;
+
+        display: block;
+        height: 50px;
+        margin: 0 1em;
+
+        &--member {
+            color: $c-text--light;
+            background-color: $c-brand;
+
+            padding: 0 4em;
+            margin: 0;
+        }
+
+        &--connexion {
+            color: $c-text--light;
+            background-color: $c-neutral--med;
+
+            padding: 0 4em;
+            margin: 0;
+        }
+    }
+}
+
+.main-nav {
+    padding: 0;
+    margin: 0;
+
+    position: relative;
+
+    &__list {
+        margin: 0;
+        padding: 0 3rem;
+        height: 90px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        list-style-type: none;
+    }
+
+    &__item {
+        font-size: 1.3rem;
+        font-family: $f-bold;
+        letter-spacing: .07em;
+
+        height: 100%;
+        margin: 0;
+    }
+
+    &__link {
+        background: url("data:image/svg+xml;utf8,<svg width='8' height='5' viewBox='0 0 8 5' xmlns='http://www.w3.org/2000/svg'><title>Arrow - petite</title><path d='M7.24 0L3.978 3.513.713 0H.71L0 .663 3.977 4.94 7.955.665V.662L7.243 0' fill='#494949' fill-rule='evenodd'/></svg>") no-repeat center right 18px;
+        color: $c-text;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        height: 100%;
+        padding: 0 3em 0 1.5em;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            background-image: url("data:image/svg+xml;utf8,<svg width='8' height='5' viewBox='0 0 8 5' xmlns='http://www.w3.org/2000/svg'><title>Arrow - petite</title><path d='M7.24 0L3.978 3.513.713 0H.71L0 .663 3.977 4.94 7.955.665V.662L7.243 0' fill='#fff' fill-rule='evenodd'/></svg>");
+            color: $c-text--light;
+            background-color: $c-neutral--darker;
+        }
+    }
+}
+
+.sub-nav {
+    background-color: $c-neutral--darker;
+    @include clearfix;
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+
+        list-style: none;
+    }
+
+    &__item {
+        text-align: center;
+
+        margin: 0;
+        border-right: 1px solid $c-neutral--dark;
+        flex-grow: 1;
+
+        &:last-child {
+            border: 0;
+        }
+    }
+
+    &__link {
+        color: $c-text--light;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-family: $f-medium;
+
+        padding: 2em 1em;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        transition: all .5s;
+
+        &:hover {
+            color: $c-text--brand;
+        }
+
+        &--active {
+            background-color: $c-neutral--light;
+            color: $c-text;
+        }
+    }
+}
+
+.responsive-menu {
+    &__icon {
+        width: 22px;
+        height: 19px;
+
+        position: absolute;
+        top: 30px;
+        right: 12px;
+
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+
+        cursor: pointer;
+
+        &::before {
+            content: "";
+
+            display: block;
+            width: 44px;
+            height: 44px;
+            margin: -12px 0 0 -11px;
+        }
+
+        & > span {
+            background: $c-text;
+
+            display: block;
+            height: 2px;
+            width: 100%;
+
+            border-radius: 2px;
+
+            position: absolute;
+            left: 0;
+
+            opacity: 1;
+
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+        }
+
+        & > span:nth-child(1) {
+            top: 0;
+        }
+
+        & > span:nth-child(2),
+        & > span:nth-child(3) {
+            top: 9px;
+        }
+
+        & > span:nth-child(4) {
+            top: 18px;
+        }
+
+        &.is-open > span:nth-child(1) {
+            width: 0;
+
+            top: 9px;
+            left: 50%;
+        }
+
+        &.is-open > span:nth-child(2) {
+            transform: rotate(45deg);
+        }
+
+        &.is-open > span:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+
+        &.is-open > span:nth-child(4) {
+            width: 0;
+
+            top: 18px;
+            left: 50%;
+        }
+
+        &.is-open + .responsive-menu__nav {
+            display: block;
+        }
+    }
+
+    &__nav {
+        display: none;
+        width: 100%;
+
+        position: absolute;
+        z-index: 9;
+    }
+}
+
+.responsive-main-nav {
+    background-color: $c-background--light;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+
+        &--level-2 {
+            background-color: $c-neutral--darker;
+
+            display: none;
+            margin-bottom: -1px;
+
+            .responsive-main-nav__link {
+                color: $c-text--light;
+                text-transform: none;
+                font-size: 1.6rem;
+
+                padding: 1.25em 2em;
+
+                &::after {
+                    background-color: $c-neutral--med;
+                }
+
+                &.is-open {
+                    background-color: $c-neutral--dark;
+                }
+            }
+
+            &.is-active {
+                display: block;
+            }
+        }
+
+        &--level-3 {
+            background-color: $c-neutral--dark;
+
+            display: none;
+            margin-bottom: -1px;
+
+            &.is-active {
+                display: block;
+            }
+
+            .responsive-main-nav__link {
+                font-size: 1.6rem;
+
+                padding: 1.25em 2em;
+
+                &::after {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    &__item {
+        display: block;
+        margin: 0;
+
+        &:first-of-type {
+            & > .responsive-main-nav__link {
+                &::after {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    &__link {
+        color: $c-text;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        display: block;
+        padding: 1em 2em;
+
+        position: relative;
+
+        &.is-open {
+            background-color: $c-neutral--darker;
+            color: $c-text--light;
+        }
+
+        &::after {
+            content: "";
+
+            background-color: $c-neutral--dark;
+
+            height: 1px;
+            width: 80vw;
+
+            position: absolute;
+            left: 10vw;
+            top: 0;
+        }
+
+        &--member,
+        &--connexion {
+            text-align: center;
+            text-transform: none;
+
+            &::after {
+                background-color: transparent;
+            }
+        }
+
+        &--member {
+            background-color: $c-brand;
+            color: $c-text--light;
+        }
+
+        &--connexion {
+            color: $c-text--light;
+            background-color: $c-neutral--med;
+        }
+    }
+}
+
+.responsive-meta-nav {
+    background-color: $c-background;
+
+    &__list {
+        text-align: center;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    &__item {
+        border-bottom: 1px solid $c-background--light;
+        margin: 0;
+    }
+
+    &__link {
+        color: $c-text;
+        font-size: 2rem;
+        text-decoration: none;
+
+        display: block;
+        padding: 1em 2em;
+    }
+}

@@ -1,57 +1,80 @@
 //----------------------------------*\
-// SETTINGS
+// ABSTRACT
 //----------------------------------*/
 
-@import 'settings/colors';
-@import 'settings/vars';
+@import "00-abstracts/mixins",
+    "00-abstracts/grid",
+    "00-abstracts/variables";
+
+//----------------------------------*\
+// VENDORS
+//----------------------------------*/
+
+@import "01-vendors/normalize";
 
 //----------------------------------*\
 // BASE
 //----------------------------------*/
 
-@import '00-base/normalize';
-@import '00-base/base';
-@import '00-base/misc';
-@import '00-base/print';
-@import '00-base/fonts';
-@import '00-base/typography';
+@import "02-base/base",
+    "02-base/print",
+    "02-base/typography";
 
 //----------------------------------*\
-// ATOMS
+// LAYOUT
 //----------------------------------*/
 
-@import '01-atoms/buttons';
-@import '01-atoms/inputs';
-@import '01-atoms/labels';
-@import '01-atoms/links';
-@import '01-atoms/lists';
+@import "03-layout/footer",
+    "03-layout/footer-nav",
+    "03-layout/header",
+    "03-layout/layout",
+    "03-layout/main",
+    "03-layout/header-nav",
+    "03-layout/section",
+    "03-layout/sidebar";
 
 //----------------------------------*\
-// MOLECULES
+// COMPONENTS
 //----------------------------------*/
 
-@import '02-molecules/cards';
-@import '02-molecules/forms';
-@import '02-molecules/navigation';
+@import "04-components/buttons",
+    "04-components/breadcrumb",
+    "04-components/course",
+    "04-components/download",
+    "04-components/filters",
+    "04-components/form",
+    "04-components/inputs",
+    "04-components/pagination",
+    "04-components/panel",
+    "04-components/schedule",
+    "04-components/slider",
+    "04-components/table";
 
 //----------------------------------*\
-// ORGANISMS
+// PAGE
 //----------------------------------*/
 
-@import '03-organisms/header';
-@import '03-organisms/footer';
-@import '03-organisms/main';
-@import '03-organisms/sidebar';
-
-// ----------------------------------*\
-// SCSS MIXINS
-//----------------------------------*/
-
+@import "05-pages/about",
+    "05-pages/calendar",
+    "05-pages/home",
+    "05-pages/formation",
+    "05-pages/member",
+    "05-pages/press",
+    "05-pages/press-article",
+    "05-pages/sst",
+    "05-pages/training",
+    "05-pages/warranty-plan",
+    "05-pages/work-relationship";
 
 //----------------------------------*\
-// UTILITIES MODULES
+// HELPERS
 //----------------------------------*/
 
-@import '08-utilities/clearfix';
-@import '08-utilities/helpers';
+@import "06-helpers/helpers",
+    "06-helpers/a11y";
 
+//----------------------------------*\
+// SHAME
+//----------------------------------*/
+
+@import "07-shame/shame";

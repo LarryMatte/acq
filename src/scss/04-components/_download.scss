@@ -1,0 +1,19 @@
+/* DOWNLOAD
+- components/download.scss */
+
+.download {
+    background: url("../icons/file.svg") no-repeat top left $c-background--light;
+
+    padding: $s-padding;
+    margin-bottom: 1em;
+
+    @include clearfix;
+
+    &__title {
+        float: left;
+    }
+
+    &__action {
+        float: right;
+    }
+}

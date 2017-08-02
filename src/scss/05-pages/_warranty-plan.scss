@@ -1,0 +1,13 @@
+/* SST
+- pages/sst.scss */
+
+.p-warranty-plan {
+    .panel--useful-tools {
+        background-color: $c-background;
+
+        &__icon {
+            margin-bottom: -15px;
+            margin-right: 20px;
+        }
+    }
+}

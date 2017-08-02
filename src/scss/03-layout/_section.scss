@@ -1,0 +1,75 @@
+/* SECTION
+- layout/section.scss */
+
+.section {
+    &__name {
+        font-family: $f-medium;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+
+        &::after {
+            content: "";
+
+            @include separator;
+        }
+    }
+
+    &__title {
+        font-family: $f-medium;
+        font-size: 3rem;
+        line-height: 1;
+        text-transform: uppercase;
+
+        margin-bottom: .8em;
+
+        @media (min-width: $screen-md-min) {
+            font-size: 4rem;
+        }
+    }
+
+    &__link {
+        text-align: center;
+
+        margin: 4.5em 0 0;
+    }
+}
+
+.stripe {
+    padding: 60px 0 75px;
+    position: relative;
+
+    &--lighter {
+        background-color: $c-background--light;
+    }
+
+    &--light {
+        background-color: $c-neutral--lighter;
+    }
+
+    &--med {
+        background-color: $c-neutral--med;
+        color: $c-text--light;
+
+        .section__name::after {
+            background-color: $c-text--light;
+        }
+    }
+
+    &--dark {
+        background-color: $c-neutral--dark;
+        color: $c-text--light;
+
+        .section__name::after {
+            background-color: $c-text--light;
+        }
+    }
+
+    &--darker {
+        background-color: $c-neutral--darker;
+        color: $c-text--light;
+
+        .section__name::after {
+            background-color: $c-text--light;
+        }
+    }
+}

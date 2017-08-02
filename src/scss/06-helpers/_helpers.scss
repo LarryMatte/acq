@@ -1,0 +1,33 @@
+/* HELPERS
+- helpers/helpers.scss */
+
+.is-left {
+    text-align: left;
+}
+
+.is-centered {
+    text-align: center;
+}
+
+.is-right {
+    text-align: right;
+}
+
+.is-block {
+    display: block;
+}
+
+.is-lowercase {
+    text-transform: lowercase;
+}
+
+.is-brand {
+    color: $c-text--brand;
+}
+
+.clearfix::after {
+    content: "";
+
+    display: table;
+    clear: both;
+}

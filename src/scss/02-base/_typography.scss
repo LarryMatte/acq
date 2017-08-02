@@ -1,0 +1,75 @@
+/* BASE
+- base/typography.scss */
+
+h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-family: $f-medium;
+    font-size: 3rem;
+
+    margin-bottom: .8em;
+
+    @media (min-width: $screen-md-min) {
+        font-size: 4rem;
+    }
+}
+
+h4 {
+    font-family: $f-medium;
+    font-size: 2rem;
+
+    margin-bottom: .8em;
+
+    @media (min-width: $screen-md-min) {
+        font-size: 2.5rem;
+    }
+}
+
+h1:first-of-type,
+h2:first-of-type,
+h3:first-of-type,
+p:first-of-type,
+li:first-of-type {
+    margin-top: 0;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+
+    margin: .75em 0;
+}
+
+ul {
+    padding-left: 2em;
+}
+
+b,
+strong {
+    font-family: $f-bold;
+    font-weight: normal;
+}
+
+a {
+    color: $c-brand;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+
+    margin-bottom: 20px;
+}

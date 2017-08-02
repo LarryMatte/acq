@@ -1,0 +1,86 @@
+/* TABLES
+- components/tables.scss */
+
+td,
+th {
+    padding: 0;
+}
+
+th {
+    color: $c-text;
+    text-align: left;
+
+    a {
+        color: #7b7b7b;
+    }
+}
+
+table {
+    th {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}
+
+.table {
+    font-size: 15px;
+
+    width: 100%;
+    max-width: 100%;
+    border-radius: 7px;
+    border-collapse: collapse;
+
+    box-shadow: 0 0 0 2px $c-neutral--light;
+
+    & > tbody td,
+    & > tbody th,
+    & > tfoot th,
+    & > tfoot td,
+    & > thead td,
+    & > thead th {
+        line-height: 1.429;
+
+        padding: 2.1rem 1.7rem;
+        vertical-align: top;
+        border-top: 2px solid $c-neutral--light;
+        border-collapse: collapse;
+    }
+
+    & > thead  th {
+        border-bottom: 2px solid $c-neutral--light;
+        padding: 1.2rem;
+
+        vertical-align: bottom;
+    }
+
+    & > caption + thead > tr:first-child > td,
+    & > caption + thead > tr:first-child > th,
+    & > colgroup + thead > tr:first-child > td,
+    & > colgroup + thead > tr:first-child > th,
+    & > thead:first-child > tr:first-child > td,
+    & > thead:first-child > tr:first-child > th {
+        border-top: 0;
+    }
+
+    &-striped > tbody > tr:nth-of-type(odd) {
+        background-color: #f9f9f9;
+    }
+
+    &-hover > tbody > tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    &-responsive {
+        min-height: .01%;
+        overflow-x: auto;
+    }
+
+    &__td--ellipsis {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        max-width: 100px;
+
+        overflow: hidden;
+    }
+}

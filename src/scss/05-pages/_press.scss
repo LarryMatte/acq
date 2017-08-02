@@ -1,0 +1,31 @@
+/* PRESS
+- pages/press.scss */
+
+.p-press {
+    &-search {
+        background: $c-neutral--darker;
+        color: $c-text--light;
+
+        padding: 2rem 0;
+
+        &__label {
+            text-transform: uppercase;
+
+            display: block;
+            margin-bottom: .5em;
+        }
+
+        &__select {
+            background: url("data:image/svg+xml;utf8,<svg width='9' height='9' viewBox='0 0 9 9' xmlns='http://www.w3.org/2000/svg'><path fill='#fff' d='M8.167 4.5l-.647-.646L4.958 6.41V.834h-.916V6.41L1.484 3.85l-.65.65L4.5 8.167'/></svg>") transparent no-repeat center right;
+            color: $c-text--light;
+            line-height: 2em;
+
+            width: 100%;
+            padding-right: 1em;
+            border-bottom: 1px solid $c-background--light;
+
+            border-radius: 0;
+            -webkit-appearance: none;
+        }
+    }
+}

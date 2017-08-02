@@ -1,0 +1,32 @@
+/* CALENDAR
+- pages/calendar.scss */
+
+.p-calendar {
+    &-search {
+        background-color: $c-neutral--darker;
+        color: $c-text--light;
+
+        padding: 2.5em 0;
+
+        &__input {
+            background: url("../icons/search.svg") transparent no-repeat center left;
+            color: white;
+            font-size: 2.5em;
+
+            display: block;
+            padding-left: 2em;
+        }
+    }
+
+    &__most-popular {
+        color: $c-text--brand;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+    }
+
+    &__filter {
+        font-size: 1.8rem;
+
+        float: right;
+    }
+}

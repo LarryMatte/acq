@@ -1,0 +1,40 @@
+/* FILTERS
+- components/filters.scss */
+
+.filters {
+    background-color: $c-background--light;
+    font-family: $f-medium;
+
+    padding: 1.25em 2em;
+
+    &__header {
+        margin-bottom: 1.8em;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    &__label {
+        font-family: $f-medium;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+
+        margin-bottom: 1.1em;
+    }
+
+    &__list {
+        padding: 0 0 1em;
+        margin: 0 0 1.5em;
+        border-bottom: 1px solid $c-neutral--light;
+
+        list-style: none;
+    }
+
+    &__item {
+        font-size: 1.4rem;
+
+        display: block;
+    }
+}

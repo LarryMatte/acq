@@ -1,0 +1,132 @@
+/* FOOTER
+- layout/footer.scss */
+
+.footer {
+    &-top {
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $screen-md-min) {
+            flex-direction: row;
+        }
+
+        &__title {
+            font-size: 2.8rem;
+            font-family: $f-medium;
+
+            margin-bottom: 0;
+        }
+
+        &__icon {
+            margin-top: 2em;
+            margin-left: 0;
+
+            transition: margin-left .2s;
+        }
+
+        &__plans,
+        &__portal,
+        &__member {
+            color: $c-text--light;
+            text-decoration: none;
+
+            padding: 4.5em 0 2.3em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+
+            &:hover {
+                .footer-top__icon {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        &__plans {
+            color: $c-text;
+            background-color: $c-neutral--light;
+        }
+
+        &__portal {
+            background-color: $c-neutral--med;
+        }
+
+        &__member {
+            background-color: $c-brand;
+        }
+    }
+
+    &-middle {
+        color: $c-text--light;
+        background-color: $c-neutral--dark;
+
+        position: relative;
+    }
+
+    &-bottom {
+        color: $c-text--light;
+        background-color: $c-neutral--darker;
+
+        padding: 3.5em 0;
+    }
+
+    &__contact {
+        float: left;
+
+        &__list {
+            padding: 0;
+            margin: 0 0 2em;
+
+            list-style: none;
+        }
+
+        &__item {
+            font-size: 1.4rem;
+            letter-spacing: .07em;
+
+            margin-bottom: .15em;
+        }
+    }
+
+    &__logo {
+        float: right;
+    }
+
+    &__separator {
+        background-color: #fff;
+    }
+
+    &__back-to-top {
+        background-color: $c-brand;
+        text-align: center;
+
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 3.5em;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        & > svg {
+            margin-top: 0;
+
+            transition: margin-top .2s;
+        }
+
+        &:hover {
+            svg {
+                margin-top: -5px;
+            }
+        }
+    }
+
+    &__copyright {
+        text-align: right;
+        font-size: 1.4rem;
+    }
+}
