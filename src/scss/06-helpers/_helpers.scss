@@ -14,7 +14,9 @@
 }
 
 .is-block {
-    display: block;
+    @media (min-width: $screen-md-min) {
+        display: block;
+    }
 }
 
 .is-lowercase {

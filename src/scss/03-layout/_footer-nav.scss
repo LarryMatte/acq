@@ -4,9 +4,10 @@
 .footer-nav {
     &__title {
         font-size: 1.6rem;
+        font-family: $f-bold;
         text-transform: uppercase;
 
-        margin: 2.5em 0 1.5em;
+        margin: 2.75em 0 1.2em;
     }
 
     &__list {
@@ -17,9 +18,9 @@
     }
 
     &__item {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
 
-        margin: 1.4rem 0;
+        margin: 1rem 0;
     }
 
     &__link {

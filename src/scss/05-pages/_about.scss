@@ -2,11 +2,17 @@
 - pages/about.scss */
 
 .p-about {
-    &__goal {
+    &-goal {
         background: url("../img/about/bg-goal.png") no-repeat;
         background-size: cover;
         color: $c-text--light;
         text-align: center;
+
+        &__title {
+            font-size: 6rem;
+            font-family: $f-bold;
+            text-transform: uppercase;
+        }
     }
 
     &__mission {
@@ -15,13 +21,34 @@
         column-count: 2;
     }
 
-    &__member {
+    &-member {
         background: url("../img/about/bg-member.png") no-repeat;
         background-size: cover;
         color: $c-text--light;
+
+        & > .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__title {
+            font-size: 6rem;
+            font-family: $f-bold;
+            text-transform: uppercase;
+
+            margin-bottom: 0;
+        }
     }
 
-    &__highlights {
+    &-values {
+        .panel {
+            min-width: 40%;
+            flex-wrap: wrap;
+        }
+    }
+
+    &-highlights {
         &__year {
             font-size: 4rem;
             font-family: $f-medium;
@@ -29,11 +56,10 @@
             display: inline-block;
             vertical-align: middle;
             width: 150px;
-            //border-right:1px solid $c-neutral--light;
+            margin-bottom: 5rem;
 
             position: relative;
 
-            &::after,
             &::before {
                 content: "";
 
@@ -48,12 +74,25 @@
                 right: -8px;
                 top: calc(50% - 7px);
             }
-        }
 
-        &__text {
-            //display: inline-block;
-            //margin-left: 150px;
-            vertical-align: middle;
+            &::after {
+                content: "";
+
+                background-color: $c-neutral--light;
+
+                width: 2px;
+                height: 100px;
+
+                position: absolute;
+                right: -2px;
+                top: -75px;
+            }
+
+            &--first {
+                &::after {
+                    height: 0;
+                }
+            }
         }
     }
 }

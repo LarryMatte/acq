@@ -16,6 +16,10 @@
 
     padding: $s-padding;
 
+    & > .row > div[class^="col-md-"] {
+        margin: 1em 0;
+    }
+
     &__date,
     &__hours,
     &__address {

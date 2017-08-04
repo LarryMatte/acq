@@ -13,7 +13,7 @@
         margin-bottom: 4em;
 
         @media (min-width: $screen-md-min) {
-            margin-bottom: 0;
+            //margin-bottom: 0;
         }
     }
 
@@ -32,7 +32,7 @@
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 0;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
 
     &--neutral {
         background-color: $c-background;
@@ -48,7 +48,7 @@
     }
 
     &__content {
-        padding: 3em $s-padding;
+        padding: 3em $s-padding 0;
         flex: 1;
 
         &--center {
@@ -114,6 +114,11 @@
 
     &__separator {
         @include separator;
+    }
+
+    &__banner {
+        margin: 0 -2.5rem -3em;
+        width: calc(100% + 5rem);
     }
 
     &__btn {

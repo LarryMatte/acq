@@ -2,16 +2,52 @@
 - pages/formation.scss */
 
 .p-formation {
+    &-banner {
+        background-color: $c-secondary;
+        background-image: none;
+        color: $c-text--light;
+
+        &__icon {
+            width: 130px;
+            height: 130px;
+        }
+
+        &__categorie,
+        &__teacher {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+
+            display: block;
+            margin-bottom: 1em;
+        }
+
+        &__title {
+            color: $c-text--light;
+            font-size: 3.85rem;
+            font-family: $f-bold;
+            text-transform: none;
+            letter-spacing: .022em;
+            line-height: 1.08em;
+        }
+    }
+
     &-details {
-        height: 90px;
+        @media (min-width: $screen-md-min) {
+            height: 90px;
+        }
 
         &__list {
             margin: 2em 0 0;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            flex-direction: column;
 
             list-style: none;
+
+            @media (min-width: $screen-md-min) {
+                flex-direction: row;
+                align-items: center;
+            }
         }
 
         &__item {
@@ -19,12 +55,18 @@
 
             margin: 0;
             padding: 1em;
-            width: 24%;
+            width: auto;
 
             position: relative;
 
+            @media (min-width: $screen-md-min) {
+                width: 24%;
+            }
+
             &:not(:last-child) {
-                border-right: 1px solid $c-neutral--med;
+                @media (min-width: $screen-md-min) {
+                    border-right: 1px solid $c-neutral--med;
+                }
             }
 
             &--location {
@@ -34,7 +76,7 @@
             }
 
             &--length {
-                background: url("data:image/svg+xml;utf8,<svg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'><title>time</title><path d='M12.364 0C5.546 0 0 5.546 0 12.364c0 6.818 5.546 12.364 12.364 12.364 6.818 0 12.364-5.546 12.364-12.364C24.728 5.546 19.182 0 12.364 0zm0 22.826c-5.77 0-10.462-4.693-10.462-10.462 0-5.77 4.693-10.462 10.462-10.462 5.77 0 10.462 4.693 10.462 10.462 0 5.77-4.693 10.462-10.462 10.462zm.95-10.866V3.896c0-.526-.424-.95-.95-.95-.525 0-.95.424-.95.95v8.468c0 .26.104.506.29.686l4.666 4.484c.185.177.423.265.66.265.25 0 .498-.1.685-.293.364-.38.352-.98-.026-1.345l-4.375-4.202z'' fill-rule='nonzero' fill='#FFF'/></svg>") no-repeat center left;
+                background: url("data:image/svg+xml;utf8,<svg width='25' height='25' viewBox='0 0 25 25' xmlns='http://www.w3.org/2000/svg'><title>time</title><path d='M12.364 0C5.546 0 0 5.546 0 12.364c0 6.818 5.546 12.364 12.364 12.364 6.818 0 12.364-5.546 12.364-12.364C24.728 5.546 19.182 0 12.364 0zm0 22.826c-5.77 0-10.462-4.693-10.462-10.462 0-5.77 4.693-10.462 10.462-10.462 5.77 0 10.462 4.693 10.462 10.462 0 5.77-4.693 10.462-10.462 10.462zm.95-10.866V3.896c0-.526-.424-.95-.95-.95-.525 0-.95.424-.95.95v8.468c0 .26.104.506.29.686l4.666 4.484c.185.177.423.265.66.265.25 0 .498-.1.685-.293.364-.38.352-.98-.026-1.345l-4.375-4.202z' fill-rule='nonzero' fill='#fff'/></svg>") no-repeat center left;
 
                 padding-left: 3em;
             }
@@ -49,10 +91,28 @@
     }
 
     &-public-cible {
-        margin: -60px 0 -40px;
+        background-color: $c-background--light;
+        color: $c-text;
+
+        padding: 3em $s-padding;
+        border-top: 10px solid $c-brand;
+
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .11);
+
+        @media (min-width: $screen-md-min) {
+            margin: -60px 0 -40px;
+        }
+
+        &__title {
+            font-size: 1.6em;
+            font-family: $f-bold;
+            text-transform: uppercase;
+
+            margin-bottom: .7em;
+        }
     }
 
-    &__formateur {
+    &-formateur {
         background: url("../img/formation/bg-formation.png") no-repeat;
         background-size: cover;
         color: $c-text--light;

@@ -20,26 +20,35 @@
         }
     }
 
-    &__main-news {
+    &-main-news {
         background-color: $c-background;
         font-family: $f-medium;
         text-transform: uppercase;
 
-        width: 575px;
-        max-width: 50%;
         padding: 0;
+        margin-bottom: $s-padding;
         border-top: 10px solid $c-brand;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
-        position: absolute;
-        top: -90px;
-        right: 0;
-        bottom: 0;
+        @media (min-width: $screen-md-min) {
+            width: 575px;
+            max-width: 50%;
+            margin-bottom: 0;
+
+            position: absolute;
+            top: -90px;
+            right: 0;
+            bottom: 0;
+        }
 
         &__info {
-            padding: 5.5rem 6rem;
+            padding: $s-padding;
+
+            @media (min-width: $screen-md-min) {
+                padding: 5.5rem 6rem;
+            }
         }
 
         &__label {
@@ -66,36 +75,42 @@
             margin: 0;
         }
     }
-}
 
-.industry-portrait {
-    background: url("../img/home/bg-industry-portrait.png") no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-
-    &__title {
-        color: $c-text--light;
-        font-size: 6rem;
-        font-family: $f-bold;
-        text-transform: uppercase;
-    }
-}
-
-.documentation-center {
-    position: relative;
-
-    &::after {
-        content: "";
-
-        background: url("../img/home/bg-documentation-center.png") no-repeat;
+    &-industry-portrait {
+        background: url("../img/home/bg-industry-portrait.png") no-repeat;
         background-size: cover;
+        background-position: bottom center;
 
-        display: block;
-        height: 100%;
+        &__title {
+            color: $c-text--light;
+            font-size: 2rem;
+            font-family: $f-bold;
+            text-transform: uppercase;
 
-        position: absolute;
-        left: 50%;
-        top: 0;
-        right: 0;
+            @media (min-width: $screen-md-min) {
+                font-size: 6rem;
+            }
+        }
+    }
+
+    &-documentation-center {
+        position: relative;
+
+        &::after {
+            content: "";
+
+            @media (min-width: $screen-md-min) {
+                background: url("../img/home/bg-documentation-center.png") no-repeat;
+                background-size: cover;
+
+                display: block;
+                height: 100%;
+
+                position: absolute;
+                left: 50%;
+                top: 0;
+                right: 0;
+            }
+        }
     }
 }

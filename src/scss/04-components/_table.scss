@@ -32,12 +32,13 @@ table {
 
     box-shadow: 0 0 0 2px $c-neutral--light;
 
-    & > tbody td,
-    & > tbody th,
-    & > tfoot th,
-    & > tfoot td,
-    & > thead td,
-    & > thead th {
+    /* stylelint-disable */
+    & > tbody > tr > td,
+    & > tbody > tr > th,
+    & > tfoot > tr > th,
+    & > tfoot > tr > td,
+    & > thead > tr > td,
+    & > thead > tr > th {
         line-height: 1.429;
 
         padding: 2.1rem 1.7rem;
@@ -46,7 +47,7 @@ table {
         border-collapse: collapse;
     }
 
-    & > thead  th {
+    & > thead > tr > th {
         border-bottom: 2px solid $c-neutral--light;
         padding: 1.2rem;
 
@@ -61,6 +62,7 @@ table {
     & > thead:first-child > tr:first-child > th {
         border-top: 0;
     }
+    /* stylelint-enable */
 
     &-striped > tbody > tr:nth-of-type(odd) {
         background-color: #f9f9f9;

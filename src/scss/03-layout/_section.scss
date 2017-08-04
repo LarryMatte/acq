@@ -30,7 +30,9 @@
     &__link {
         text-align: center;
 
-        margin: 4.5em 0 0;
+        @media (min-width: $screen-md-min) {
+            margin: 4.5em 0 0;
+        }
     }
 }
 

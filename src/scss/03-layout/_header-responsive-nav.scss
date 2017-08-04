@@ -1,0 +1,314 @@
+/* MAIN-NAV
+- layout/main-responsive-nav.scss */
+
+.responsive-menu {
+    &__icon {
+        width: 30px;
+        height: 30px;
+
+        position: absolute;
+        top: 30px;
+        right: 12px;
+
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+
+        cursor: pointer;
+
+        &::before {
+            content: "";
+
+            display: block;
+            width: 44px;
+            height: 44px;
+            margin: -12px 0 0 -8px;
+        }
+
+        & > span {
+            background: $c-text;
+
+            display: block;
+            height: 2px;
+            width: 100%;
+
+            border-radius: 2px;
+
+            position: absolute;
+            left: 0;
+
+            opacity: 1;
+
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+        }
+
+        & > span:nth-child(1) {
+            top: 0;
+        }
+
+        & > span:nth-child(2),
+        & > span:nth-child(3) {
+            top: 9px;
+        }
+
+        & > span:nth-child(4) {
+            top: 18px;
+        }
+
+        &.is-open > span:nth-child(1) {
+            width: 0;
+
+            top: 9px;
+            left: 50%;
+        }
+
+        &.is-open > span:nth-child(2) {
+            transform: rotate(45deg);
+        }
+
+        &.is-open > span:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+
+        &.is-open > span:nth-child(4) {
+            width: 0;
+
+            top: 18px;
+            left: 50%;
+        }
+
+        &.is-open + .responsive-menu__nav {
+            display: block;
+        }
+    }
+
+    &__nav {
+        display: none;
+        width: 100%;
+
+        position: absolute;
+        top: 85px;
+        z-index: 9;
+    }
+}
+
+.responsive-main-nav {
+    background-color: $c-background--light;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+
+        &--level-2 {
+            background-color: $c-neutral--darker;
+
+            display: none;
+            margin-bottom: -1px;
+
+            .responsive-main-nav__link {
+                color: $c-text--light;
+                text-transform: none;
+                font-size: 1.6rem;
+
+                padding: 1.25em 3rem;
+
+                &::before {
+                    content: url("data:image/svg+xml;utf8,<svg width='11' height='7' viewBox='0 0 8 5' xmlns='http://www.w3.org/2000/svg'><title>Arrow - petite</title><path d='M7.24 0L3.978 3.513.713 0H.71L0 .663 3.977 4.94 7.955.665V.662L7.243 0' fill='#fff' fill-rule='evenodd'/></svg>");
+
+                    display: block;
+                    width: 11px;
+                    height: 7px;
+
+                    position: absolute;
+                    top: 18px;
+                    right: 35px;
+
+                    transition: all .5s;
+                }
+
+                &::after {
+                    background-color: $c-neutral--med;
+                }
+
+                &.is-open {
+                    background-color: $c-neutral--dark;
+
+                    border-bottom: 0;
+
+                    &::before {
+                        content: url("data:image/svg+xml;utf8,<svg width='11' height='7' viewBox='0 0 8 5' xmlns='http://www.w3.org/2000/svg'><title>Arrow - petite</title><path d='M7.24 0L3.978 3.513.713 0H.71L0 .663 3.977 4.94 7.955.665V.662L7.243 0' fill='#fff' fill-rule='evenodd'/></svg>");
+
+                        top: 35px;
+                    }
+
+                    &::after {
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            &.is-active {
+                display: block;
+            }
+        }
+
+        &--level-3 {
+            background-color: $c-neutral--dark;
+
+            display: none;
+            margin-bottom: -1px;
+
+            position: relative;
+            z-index: 1;
+
+            &.is-active {
+                display: block;
+            }
+
+            .responsive-main-nav__link {
+                background-image: none;
+                font-size: 1.6rem;
+
+                padding: 1.25em 3rem;
+
+                &::before {
+                    content: "";
+                }
+
+                &::after {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    &__item {
+        display: block;
+        margin: 0;
+
+        &:first-of-type {
+            & > .responsive-main-nav__link {
+                &::after {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    &__link {
+        color: $c-text;
+        font-size: 1.6rem;
+        font-family: $f-bold;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        display: block;
+        padding: 1.4em 3rem;
+
+        position: relative;
+
+        &.is-active {
+            color: $c-text--light;
+            background: url("data:image/svg+xml;utf8,<svg width='15' height='15' viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'><title>Arrow</title><path fill='#FFF' d='M13 .333l-2.232 2.233 8.835 8.85H.333v3.167h19.27l-8.85 8.835L13 25.668 25.667 13'/></svg>") no-repeat center left 3rem;
+            background-color: $c-brand;
+
+            padding-left: 5.5rem;
+        }
+
+        &.is-open {
+            background-color: $c-neutral--darker;
+            color: $c-text--light;
+
+            border-bottom: 1px solid $c-neutral--med;
+
+            &::before {
+                content: url("data:image/svg+xml;utf8,<svg width='15' height='10' viewBox='0 0 8 5' xmlns='http://www.w3.org/2000/svg'><title>Arrow - petite</title><path d='M7.24 0L3.978 3.513.713 0H.71L0 .663 3.977 4.94 7.955.665V.662L7.243 0' fill='#fff' fill-rule='evenodd'/></svg>");
+
+                top: 32px;
+
+                transform: rotate(-180deg);
+                transform-origin: center center;
+            }
+        }
+
+        &::before {
+            content: url("data:image/svg+xml;utf8,<svg width='15' height='10' viewBox='0 0 8 5' xmlns='http://www.w3.org/2000/svg'><title>Arrow - petite</title><path d='M7.24 0L3.978 3.513.713 0H.71L0 .663 3.977 4.94 7.955.665V.662L7.243 0' fill='#494949' fill-rule='evenodd'/></svg>");
+
+            display: block;
+            width: 15px;
+            height: 10px;
+
+            position: absolute;
+            top: 22px;
+            right: 35px;
+
+            transition: all .5s;
+        }
+
+        &::after {
+            content: "";
+
+            background-color: $c-neutral--dark;
+
+            height: 1px;
+            width: 80vw;
+
+            position: absolute;
+            left: 10vw;
+            top: 0;
+        }
+
+        &--member,
+        &--connexion {
+            text-align: center;
+            text-transform: none;
+
+            &::before {
+                content: "";
+            }
+
+            &::after {
+                background-color: transparent;
+            }
+        }
+
+        &--member {
+            background-color: $c-brand;
+            color: $c-text--light;
+        }
+
+        &--connexion {
+            color: $c-text--light;
+            background-color: $c-neutral--med;
+        }
+    }
+}
+
+.responsive-meta-nav {
+    background-color: $c-background;
+
+    &__list {
+        text-align: center;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    &__item {
+        border-bottom: 1px solid $c-background--light;
+        margin: 0;
+    }
+
+    &__link {
+        color: $c-text;
+        font-size: 2rem;
+        text-decoration: none;
+
+        display: block;
+        padding: 1em 2em;
+    }
+}

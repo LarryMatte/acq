@@ -2,22 +2,24 @@
 - pages/article.scss */
 
 .p-article {
-    &__infos {
+    &-infos {
         font-size: 1.6rem;
         text-transform: uppercase;
 
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
 
-    &__date {
-        display: inline-block;
-        margin-right: 1em;
-    }
+        &__date {
+            font-family: $f-medium;
 
-    &__categorie {
-        color: $c-text--med;
+            display: inline-block;
+            margin-right: 1em;
+        }
+
+        &__categorie {
+            color: $c-text--med;
+        }
     }
 
     &-banner {
@@ -42,10 +44,14 @@
         }
 
         &__list {
-            margin: 0;
+            margin: 0 0 2rem;
             padding: 0;
 
             list-style: none;
+
+            @media (min-width: $screen-md-min) {
+                margin: 0;
+            }
         }
 
         &__item {

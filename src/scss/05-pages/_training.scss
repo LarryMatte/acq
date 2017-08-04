@@ -8,51 +8,55 @@
         color: $c-text--light;
     }
 
-    &__law {
+    &-law {
         background: url("../img/training/bg-law.png") no-repeat;
         background-size: cover;
         color: $c-text--light;
+
+        &__title {
+            font-size: 6rem;
+            text-transform: uppercase;
+        }
+
+        & > .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 
-    &__questions {
+    &-financial-incentive {
+        &__list {
+            margin: 0;
+            padding: 0 0 0 9.75em;
+
+            list-style-type: none;
+        }
+
+        &__item {
+            font-size: 2.6rem;
+            font-family: $f-medium;
+
+            margin: .95em 0;
+        }
+
+        &__number {
+            color: $c-text--brand;
+            font-size: 4rem;
+
+            margin-left: -4.5rem;
+        }
+    }
+
+    &-questions {
         background: url("../img/training/bg-questions.png") no-repeat;
         background-size: cover;
         color: $c-text--light;
-    }
 
-    &__highlights {
-        &__year {
-            font-size: 4rem;
-            font-family: $f-medium;
-
-            display: inline-block;
-            vertical-align: middle;
-            width: 150px;
-            //border-right:1px solid $c-neutral--light;
-
-            position: relative;
-
-            &::after,
-            &::before {
-                content: "";
-
-                background-color: $c-neutral--light;
-
-                height: 15px;
-                width: 15px;
-
-                border-radius: 50%;
-
-                position: absolute;
-                right: -8px;
-                top: calc(50% - 7px);
-            }
-        }
-
-        &__text {
-            //display: inline-block;
-            //margin-left: 150px;
-            vertical-align: middle;
+        &__title {
+            font-size: 6rem;
+            text-transform: uppercase;
+            font-family: $f-bold;
         }
     }
 }

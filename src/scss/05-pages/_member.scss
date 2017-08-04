@@ -1,8 +1,8 @@
 /* MEMBER
 - pages/member.scss */
 
-.p-member {
-    &__offers {
+.p-members {
+    &-offers {
         margin-bottom: .2em;
         display: flex;
 
@@ -30,17 +30,29 @@
         }
     }
 
-    &__association {
+    &-association {
         .panel {
-            min-width: 33%;
-            width: 33%;
+            min-width: 30%;
             margin-bottom: 20px;
+            flex-wrap: wrap;
         }
     }
 
-    &__brochure {
+    &-brochure {
         color: $c-text--light;
         background: url("../img/member/bg-brochure.png") no-repeat;
         background-size: cover;
+
+        & > .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 6rem;
+            text-transform: uppercase;
+            font-family: $f-bold;
+        }
     }
 }

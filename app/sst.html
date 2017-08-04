@@ -17,7 +17,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__top">
+        <div class="header-top">
             <nav class="meta-nav">
                 <ul class="meta-nav__list">
                     <li class="meta-nav__item">
@@ -41,19 +41,24 @@
                         </a>
                     </li>
                     <li class="meta-nav__item">
-                        <a href="#" class="meta-nav__link meta-nav__link--membre">
+                        <a href="#" class="meta-nav__link meta-nav__link--member">
                             Devenir membre
                         </a>
                     </li>
                     <li class="meta-nav__item">
                         <a href="#" class="meta-nav__link meta-nav__link--connexion">
-                            Connexion à l'espace ACQ*
+                            Connexion à l'espace ACQ
+                            <svg class="meta-nav__link--connexion__icon" width="8" height="8" viewBox="0 0 26 26"
+                                 xmlns="http://www.w3.org/2000/svg"><title>Arrow</title>
+                                <path fill="#FFF"
+                                      d="M13 .333l-2.232 2.233 8.835 8.85H.333v3.167h19.27l-8.85 8.835L13 25.668 25.667 13"/>
+                            </svg>
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="wrapper clearfix">
-                <span class="header__region">Region de Québec
+                <span class="header__region">Région de Québec
                     <svg width="9" height="9" viewBox="0 0 9 9" xmlns="http://www.w3.org/2000/svg">
                         <title>Arrow</title>
                         <path fill="#494949"
@@ -62,7 +67,7 @@
                 </span>
             </div>
         </div>
-        <div class="header__bottom">
+        <div class="header-bottom">
             <div class="wrapper">
                 <h1 class="header__logo">
                     <img src="assets/img/ACQ-logo.png" alt="">
@@ -99,50 +104,266 @@
                     </li>
                 </ul>
             </div>
+            <div class="main-nav__sub-nav">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <ul class="main-nav__sub-nav__list">
+                                <li class="main-nav__sub-nav__item">
+                                    <span class="main-nav__sub-nav__title">Relation du travail</span>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link is-active">Négotiation 2017</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <span class="main-nav__sub-nav__title">Sante et securite au travail</span>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Services-conseils IC/I</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Mutuelle de prévention</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Location de main d'oeuvre SST</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="main-nav__sub-nav__list">
+                                <li class="main-nav__sub-nav__item">
+                                    <span class="main-nav__sub-nav__title">Formations</span>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Calendrier des cours</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Licence RBQ</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Perfectionnement salariés</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <span class="main-nav__sub-nav__title">Résidentiel</span>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Plans de garantie</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Services résidentiels</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="main-nav__sub-nav__list">
+                                <li class="main-nav__sub-nav__item">
+                                    <span class="main-nav__sub-nav__title">Services aux membres</span>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Cautionnement de licence</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Développement durable</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Économique</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Impression de plans</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Juridiques</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Module C</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Paie</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Programme intégrité</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Rabais sur achat</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Techniques</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="main-nav__sub-nav__list">
+                                <li class="main-nav__sub-nav__item">
+                                    <span class="main-nav__sub-nav__title">Évènements</span>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Activités de réseautage</a>
+                                </li>
+                                <li class="main-nav__sub-nav__title">
+                                    <a href="#" class="main-nav__sub-nav__link">Congrès ACQ</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <a href="#" class="main-nav__sub-nav__link">Banquet reconnaissance</a>
+                                </li>
+                                <li class="main-nav__sub-nav__item">
+                                    <span class="main-nav__sub-nav__title">Documents et publications</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn--brand btn--large">devenir membre</a>
+            </div>
         </div>
-        <div class="header__banner p-training__banner">
+        <div class="header-banner">
             <div class="wrapper">
+                <p class="header-banner__title">Santé et sécurité au travail (sst)</p>
                 <div class="row">
-                    <div class="col-md-8">
-                        <h2>santé et sécurité au travail (sst)</h2>
+                    <div class="col-md-6">
                         <p>Lorem ipsum</p>
                     </div>
-                    <div class="col-md-4">
-                        <a href="#" class="btn btn--brand btn--brand--inverted">contacter nos conseillers</a>
+                    <div class="col-md-6 is-right">
+                        <a href="#" class="btn btn--brand--inverted">Contacter nos conseillers</a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <section class="stripe stripe--light">
+    <header class="header-responsive">
+        <h1 class="header__logo">
+            <img src="assets/img/ACQ-logo.png" alt="">
+        </h1>
+        <div class="search"></div>
+        <div class="responsive-menu">
+            <div class="responsive-menu__icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="responsive-menu__nav">
+                <nav class="responsive-main-nav">
+                    <ul class="responsive-main-nav__list">
+                        <li class="responsive-main-nav__item">
+                            <a href="#"
+                               class="js-responsive-main-nav__parent responsive-main-nav__link">Entrepreneurs</a>
+                            <ul class="sub-menu responsive-main-nav__list responsive-main-nav__list--level-2">
+                                <li class="responsive-main-nav__item">
+                                    <a href="#" class="responsive-main-nav__link">Relation du travail</a>
+                                </li>
+                                <li class="responsive-main-nav__item">
+                                    <a href="#" class="responsive-main-nav__link">Santé et Sécurité au travail</a>
+                                </li>
+                                <li class="responsive-main-nav__item">
+                                    <a href="#"
+                                       class="js-responsive-main-nav__parent responsive-main-nav__link">Formations</a>
+                                    <ul class="sub-menu responsive-main-nav__list responsive-main-nav__list--level-3">
+                                        <li class="responsive-main-nav__item">
+                                            <a href="#"
+                                               class="responsive-main-nav__link is-active">Calendrier des cours</a>
+                                        </li>
+                                        <li class="responsive-main-nav__item">
+                                            <a href="#" class="responsive-main-nav__link">Licence RBQ</a>
+                                        </li>
+                                        <li class="responsive-main-nav__item">
+                                            <a href="#"
+                                               class="responsive-main-nav__link">Perfectionnement des salaries</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="responsive-main-nav__item">
+                                    <a href="#" class="responsive-main-nav__link">Résidentiel</a>
+                                </li>
+                                <li class="responsive-main-nav__item">
+                                    <a href="#" class="responsive-main-nav__link">Services aux membres</a>
+                                </li>
+                                <li class="responsive-main-nav__item">
+                                    <a href="#" class="responsive-main-nav__link">Évènements</a>
+                                </li>
+                                <li class="responsive-main-nav__item">
+                                    <a href="#" class="responsive-main-nav__link">Documents et plublications</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="responsive-main-nav__item">
+                            <a href="#" class="responsive-main-nav__link">Negociation 2017</a>
+                        </li>
+                        <li class="responsive-main-nav__item">
+                            <a href="#" class="responsive-main-nav__link">Grand public</a>
+                        </li>
+                        <li class="responsive-main-nav__item">
+                            <a href="#"
+                               class="responsive-main-nav__link responsive-main-nav__link--member">Devenir membre</a>
+                        </li>
+                        <li class="responsive-main-nav__item">
+                            <a href="#"
+                               class="responsive-main-nav__link responsive-main-nav__link--connexion">Connexion à l'espace ACQ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__region">
+                    Quebec
+                    <svg class="header__region__icon" width="20" height="20" viewBox="0 0 9 9"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <title>Arrow</title>
+                        <path fill="#494949"
+                              d="M8.167 4.5l-.647-.646L4.958 6.41V.834h-.916V6.41L1.484 3.85l-.65.65L4.5 8.167"></path>
+                    </svg>
+                </div>
+                <nav class="responsive-meta-nav">
+                    <ul class="responsive-meta-nav__list">
+                        <li class="responsive-meta-nav__item">
+                            <a href="#" class="responsive-meta-nav__link">Nouvelles</a>
+                        </li>
+                        <li class="responsive-meta-nav__item">
+                            <a href="#" class="responsive-meta-nav__link">Carrière</a>
+                        </li>
+                        <li class="responsive-meta-nav__item">
+                            <a href="#" class="responsive-meta-nav__link">Nous joindre</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="stripe stripe--lighter">
         <div class="wrapper">
             <h3 class="section__title">Nous vous offrons</h3>
             <p class="lead">Notre équipe de conseillers en santé et sécurité du travail (SST) est présente à travers la province pour offrir des services-conseils  en SST sans frais aux 17 000 employeurs des secteurs IC/I. Bénéficiez de conseils en matière de gestion des lésions professionnelles, en SST sur vos lieux de travail, d’un programme de prévention et de l’interprétation des lois et des règlements.</p>
-            <div class="row">
-                <div class="col-md-5">
-                    <img src="assets/img/sst/img-sst-1.png" alt="">
-                    <h3>Conseils en matière de lésions professionnelles</h3>
-                    <hr class="separator">
-                    <p>Notre équipe de gestionnaires vous propose une stratégie  médico-administrative à adopter dans la gestion de vos dossiers de lésions professionnelles…</p>
-                    <p><a href="#">Ce service est gratuit pour les membres ACQ</a></p>
-                    <a href="#" class="btn btn--brand">En savoir plus</a>
+            <div class="offers">
+                <div class="offer">
+                    <div class="offer__content">
+                        <img class="offer__img" src="assets/img/sst/img-sst-1.png" alt="">
+                        <h3 class="panel__title">Services-conseils</h3>
+                        <hr class="separator">
+                        <p>Nos spécialistes en relations du travail vous aideront à trouver réponses à vos questions notamment concernant :</p>
+                        <ul>
+                            <li>Les conventions collectives </li>
+                            <li>La loi R-20 et ses règlements</li>
+                            <li>Les conflits de compétence ou de juridiction de métier </li>
+                            <li>La paie et le rapport mensuel</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="offer__btn btn btn--brand">En savoir plus</a>
                 </div>
-                <div class="col-md-5 col-md-push-2">
-                    <img src="assets/img/sst/img-sst-2.png" alt="">
-                    <h3>Défense juridique</h3>
-                    <hr class="separator">
-                    <p>Le conseiller en SST effectue la vérification des éléments de diligence raisonnable avec l’employeur lors de l’émission des constats d’infraction provenant de la CNESST…</p>
-                    <p><a href="#">Ce service est offert à taux préférentiel pour les membres ACQ.</a></p>
-                    <a href="#" class="btn btn--brand">En savoir plus</a>
+                <div class="offer">
+                    <div class="offer__content">
+                        <img class="offer__img" src="assets/img/sst/img-sst-2.png" alt="">
+                        <h3 class="panel__title">Formations</h3>
+                        <hr class="separator">
+                        <p>Des ateliers pratiques sont offerts gratuitement aux employeurs à travers la province à propos de la gestion de la paie et les principales règles régissant l’industrie de la construction.</p>
+                    </div>
+                    <a href="#" class="offer__btn btn btn--brand">En savoir plus</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="stripe stripe--med p-sst__prevention">
+    <section class="stripe stripe--med p-sst-prevention">
         <div class="wrapper">
             <div class="row">
                 <div class="col-md-5">
-                    <p>Plus de 24 300  visites de conformité sur  les chantiers</p>
+                    <p class="p-sst-prevention__text"><strong>Plus de 24 300 </strong> visites de conformité sur  les chantiers</p>
                 </div>
                 <div class="col-md-5 col-md-push-2">
                     <span class="section__name">Allez plus loin</span>
@@ -160,19 +381,19 @@
             <div class="panels">
                 <div class="panel">
                     <div class="panel__content">
-                        <a href="#.pdf">Protection des issues contre l’incendie</a>
+                        <h3 class="panel__title"><a href="#.pdf">Protection des issues contre l’incendie</a></h3>
                     </div>
                     <a href="#" class="panel__btn btn btn--brand">en savoir plus</a>
                 </div>
                 <div class="panel">
                     <div class="panel__content">
-                        <a href="#.pdf">Code de construction  du Québec</a>
+                        <h3 class="panel__title"><a href="#.pdf">Code de construction  du Québec</a></h3>
                     </div>
                     <a href="#" class="panel__btn btn btn--brand">en savoir plus</a>
                 </div>
                 <div class="panel">
                     <div class="panel__content">
-                        <a href="#.pdf">Protection des issues contre l’incendie</a>
+                        <h3 class="panel__title"><a href="#.pdf">Protection des issues contre l’incendie</a></h3>
                     </div>
                     <a href="#" class="panel__btn btn btn--brand">en savoir plus</a>
                 </div>
@@ -182,7 +403,7 @@
             </div>
         </div>
     </section>
-    <section class="stripe">
+    <section class="stripe stripe--light">
         <div class="wrapper">
             <span class="section__name">nouvelles</span>
             <h3 class="section__title"><span class="is-block">Informations</span> pertinentes</h3>
@@ -227,7 +448,7 @@
     <section class="stripe">
         <div class="wrapper">
             <span class="section__name">Pour aller plus loin</span>
-            <h3 class="section__title"><span class="is-block">Chroniques</span> ACQconstruction.com</h3>
+            <h3 class="section__title"><span class="is-block">Chroniques</span> ACQ<span class="is-lowercase">construction.com</span></h3>
             <div class="panels">
                 <article class="panel">
                     <div class="panel__content">
@@ -255,11 +476,11 @@
                 </article>
             </div>
             <div class="section__link">
-                <a href="#" class="btn">Lire d'autres chroniques sur ACQConstruire.com</a>
+                <a href="#" class="btn btn--neutral">Lire d'autres chroniques sur ACQConstruire.com</a>
             </div>
         </div>
     </section>
-    <section class="stripe stripe--light">
+    <section class="stripe stripe--lighter">
         <div class="wrapper">
             <h3 class="section__title"><span class="is-block">Services qui pourraient</span> vous intéresser</h3>
             <div class="slider row">
@@ -285,151 +506,148 @@
         </div>
     </section>
     <footer class="footer">
-        <div class="footer__top">
-            <div class="footer__top__plans col-md-4">
-                <p class="footer__top__title">Salle de plans</p>
+        <div class="footer-top">
+            <a href="#" class="footer-top__plans col-md-4">
+                <p class="footer-top__title">Salle de plans</p>
                 <p>Lorem ipsum dolar sit amet</p>
-                <a href="#" class="footer__top__icon">
-                    <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-                        <title>Arrow</title>
-                        <path fill="#35383a"
-                              d="M13 .333l-2.232 2.233 8.835 8.85H.333v3.167h19.27l-8.85 8.835L13 25.668 25.667 13"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="footer__top__portal col-md-4">
-                <p class="footer__top__title">Portail <span class="is-block">ACQConstruction.com</span></p>
+                <svg class="footer-top__icon" width="26" height="26" viewBox="0 0 26 26"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <title>Arrow</title>
+                    <path fill="#35383a"
+                          d="M13 .333l-2.232 2.233 8.835 8.85H.333v3.167h19.27l-8.85 8.835L13 25.668 25.667 13"/>
+                </svg>
+            </a>
+            <a href="#" class="footer-top__portal col-md-4">
+                <p class="footer-top__title">Portail <span class="is-block">ACQConstruction.com</span></p>
                 <p>Lorem ipsum dolar sit amet</p>
-                <a href="#" class="footer__top__icon">
-                    <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-                        <title>Arrow</title>
-                        <path fill="#fff"
-                              d="M13 .333l-2.232 2.233 8.835 8.85H.333v3.167h19.27l-8.85 8.835L13 25.668 25.667 13"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="footer__top__member col-md-4">
-                <p class="footer__top__title">Devenir membre</p>
+                <svg class="footer-top__icon" width="26" height="26" viewBox="0 0 26 26"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <title>Arrow</title>
+                    <path fill="#fff"
+                          d="M13 .333l-2.232 2.233 8.835 8.85H.333v3.167h19.27l-8.85 8.835L13 25.668 25.667 13"/>
+                </svg>
+            </a>
+            <a href="#" class="footer-top__member col-md-4">
+                <p class="footer-top__title">Devenir membre</p>
                 <p>Lorem ipsum dolar sit amet</p>
-                <a href="#" class="footer__top__icon">
-                    <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
-                        <title>Arrow</title>
-                        <path fill="#fff"
-                              d="M13 .333l-2.232 2.233 8.835 8.85H.333v3.167h19.27l-8.85 8.835L13 25.668 25.667 13"/>
-                    </svg>
-                </a>
-            </div>
+                <svg class="footer-top__icon" width="26" height="26" viewBox="0 0 26 26"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <title>Arrow</title>
+                    <path fill="#fff"
+                          d="M13 .333l-2.232 2.233 8.835 8.85H.333v3.167h19.27l-8.85 8.835L13 25.668 25.667 13"/>
+                </svg>
+            </a>
         </div>
-        <div class="footer__middle">
+        <div class="footer-middle">
             <div class="wrapper">
                 <div class="stripe">
-                    <div class="footer__nav row">
+                    <div class="footer-nav row">
                         <div class="col-md-3">
-                            <ul class="footer__nav__list">
-                                <li class="footer__nav__title">
-                                    <a href="#" class="footer__nav__link">Entrepreneurs</a>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__title">
+                                    <a href="#" class="footer-nav__link">Entrepreneurs</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Relation du travail</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Relation du travail</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Santé et sécurité du travail</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Santé et sécurité du travail</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Mutulles de prévention</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Mutulles de prévention</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Formations</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Formations</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Résidentiel</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Résidentiel</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Services aux membres</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Services aux membres</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Évènements</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Évènements</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Documentations et publication</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Documentations et publication</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-md-3">
-                            <ul class="footer__nav__list">
-                                <li class="footer__nav__title">
-                                    <a href="#" class="footer__nav__link">Bsdq</a>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__title">
+                                    <a href="#" class="footer-nav__link">Bsdq</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Code</a>
+                                <li class="footer-av__item">
+                                    <a href="#" class="footer-nav__link">Code</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Guides</a>
+                                <li class="footer-av__item">
+                                    <a href="#" class="footer-nav__link">Guides</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Assujettissement</a>
+                                <li class="footer-av__item">
+                                    <a href="#" class="footer-nav__link">Assujettissement</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Plaintes</a>
+                                <li class="footer-av__item">
+                                    <a href="#" class="footer-nav__link">Plaintes</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Foire aux questions</a>
+                                <li class="footer-av__item">
+                                    <a href="#" class="footer-nav__link">Foire aux questions</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">À propos</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3">
-                            <ul class="footer__nav__list">
-                                <li class="footer__nav__title">
-                                    <a href="#" class="footer__nav__link">Grand public</a>
-                                </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Trouver un entrepreneurs</a>
-                                </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Plans de garantie résidentiels</a>
-                                </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Services de copropriété</a>
-                                </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Construction durable</a>
-                                </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Devenir entrepreneurs</a>
-                                </li>
-                                <li class="footer__nav__title">
-                                    <a href="#" class="footer__nav__link">Répertoire des membres</a>
+                                <li class="footer-av__item">
+                                    <a href="#" class="footer-nav__link">À propos</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-md-3">
-                            <ul class="footer__nav__list">
-                                <li class="footer__nav__title">
-                                    <a href="#" class="footer__nav__link">À propos</a>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__title">
+                                    <a href="#" class="footer-nav__link">Grand public</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">L'association</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Trouver un entrepreneurs</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Grands dossiers</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Plans de garantie résidentiels</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Développement durable</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Services de copropriété</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Médias</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Construction durable</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Votre ACQ régionale</a>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Devenir entrepreneurs</a>
                                 </li>
-                                <li class="footer__nav__item">
-                                    <a href="#" class="footer__nav__link">Carrières</a>
+                                <li class="footer-nav__title">
+                                    <a href="#" class="footer-nav__link">Répertoire des membres</a>
                                 </li>
-                                <li class="footer__nav__title">
-                                    <a href="#" class="footer__nav__link">Nouvelles</a>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__title">
+                                    <a href="#" class="footer-nav__link">À propos</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">L'association</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Grands dossiers</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Développement durable</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Médias</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Votre ACQ régionale</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="#" class="footer-nav__link">Carrières</a>
+                                </li>
+                                <li class="footer-nav__title">
+                                    <a href="#" class="footer-nav__link">Nouvelles</a>
                                 </li>
                             </ul>
                         </div>
@@ -467,18 +685,18 @@
                 </svg>
             </a>
         </div>
-        <div class="footer__bottom">
+        <div class="footer-bottom">
             <div class="wrapper row">
-                <div class="footer__meta-nav col-md-6">
-                    <ul class="footer__meta-nav__list">
-                        <li class="footer__meta-nav__item">
-                            <a href="#" class="footer__meta-nav__link">Plan du site</a>
+                <div class="footer-meta-nav col-md-6">
+                    <ul class="footer-meta-nav__list">
+                        <li class="footer-meta-nav__item">
+                            <a href="#" class="footer-meta-nav__link">Plan du site</a>
                         </li>
-                        <li class="footer__meta-nav__item">
-                            <a href="#" class="footer__meta-nav__link">Condition d'utilisations</a>
+                        <li class="footer-meta-nav__item">
+                            <a href="#" class="footer-meta-nav__link">Condition d'utilisations</a>
                         </li>
-                        <li class="footer__meta-nav__item">
-                            <a href="#" class="footer__meta-nav__link">Politique d'utilisation</a>
+                        <li class="footer-meta-nav__item">
+                            <a href="#" class="footer-meta-nav__link">Politique d'utilisation</a>
                         </li>
                     </ul>
                 </div>
@@ -490,5 +708,26 @@
             </div>
         </div>
     </footer>
+
+    <script src="assets/components/jquery/jquery.min.js"></script>
+    <script src="assets/js/scripts.min.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
 </body>
 </html>

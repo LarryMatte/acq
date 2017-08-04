@@ -24,6 +24,9 @@
         background-color: $c-background;
 
         height: 90px;
+
+        position: relative;
+        z-index: 2;
     }
 
     &__logo {
@@ -64,6 +67,8 @@
 
         .header__logo {
             display: inline-block;
+            margin-left: 15px;
+            padding-top: 15px;
 
             float: none;
         }
